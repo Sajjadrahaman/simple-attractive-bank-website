@@ -3,6 +3,7 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     // Step-2: Get the email address inside the input field
     const emailField = document.getElementById('user-email');
     const email = emailField.value;
+    email.value = '';
     // Step-3: Get Password inside the password field
     /* 
      3.1:: Set id on the html element
@@ -11,6 +12,7 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     */
    const passwordField = document.getElementById('user-password');
    const password = passwordField.value;
+   password.value = '';
     // Danger:: Don't verify email && password on the client side also like this
     // Step-4: verify email and password for validation
     if(email === 'baapEr@bank.com' && password === 'AmiTorPichone123'){

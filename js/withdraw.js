@@ -16,7 +16,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     */
     const previousBalanceTotal = getTextElementValueById('balance-total');
     if (newWithdrawAmount > previousBalanceTotal) {
-        alert('you have not enough balance');
+        alert("you haven't enough balance");
         return;
     }
     /*
